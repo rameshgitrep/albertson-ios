@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Random Cat Fact View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="RandomCatFactViewController" id="BYZ-38-t0r" customClass="RandomCatFactViewController" customModule="SystemTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="a3Z-1z-dxM">
+                                <rect key="frame" x="45" y="77" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="JvZ-vD-d8r"/>
+                                    <constraint firstAttribute="height" constant="300" id="xSr-gW-BYQ"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dGe-rV-PCT">
+                                <rect key="frame" x="45" y="407" width="300" height="403"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="a3Z-1z-dxM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Fib-dj-yqZ"/>
+                            <constraint firstItem="dGe-rV-PCT" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="L5q-08-uqB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dGe-rV-PCT" secondAttribute="trailing" constant="45" id="MD9-TC-OoQ"/>
+                            <constraint firstItem="dGe-rV-PCT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="bLB-kr-Amh"/>
+                            <constraint firstItem="dGe-rV-PCT" firstAttribute="top" secondItem="a3Z-1z-dxM" secondAttribute="bottom" constant="30" id="dHl-Hg-Kjz"/>
+                            <constraint firstItem="a3Z-1z-dxM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="u4g-Qc-ETQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="catImageView" destination="a3Z-1z-dxM" id="oei-Uh-kYs"/>
+                        <outlet property="catfactTxtView" destination="dGe-rV-PCT" id="z3b-Ti-uCk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-6.1538461538461533" y="3.5545023696682461"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
